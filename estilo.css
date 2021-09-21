@@ -52,3 +52,8 @@ body {
 .container span:nth-child(5) {
   color: #bb00ff;
 }
+
+.linea {
+  color: rgb(243, 12, 12);
+  
+  }
