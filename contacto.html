@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+</head>
+<!-- NavBar -->
+<section>
+    <nav class="navbar navbar-light .navbar-expand-lg. bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/LOGOcolores.png" alt="" width="40" height="40">
+                <a class="navbar-brand" href="#">PC1 Computacion</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">PC1 Computacion</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Soporte</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                  </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Notebooks</a></li>
+                                    <li><a class="dropdown-item" href="#">Impresoras</a></li>
+                                    <li><a class="dropdown-item" href="#">Scanners</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </nav>
+</section>
+
+<!-- Contacto -->
+<section id="contacto">
+    <div class="container" class="container-contacto">
+        <div class="row">
+            <div class="col-4"> <img src="img/logocondomicilio.png" alt="" width="300" height="300"></div>
+            <div class="col-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.743639193009!2d-58.49358508527622!3d-34.50938296001883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb13e019f10a5%3A0x84ae8659e4747745!2sPC1%20COMPUTACI%C3%93N!5e0!3m2!1ses!2sar!4v1632756739253!5m2!1ses!2sar"
+                    width="750" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Formulario -->
+<section id="formulario">
+    <div class="container">
+        <h2>Contacto</h2>
+        <br>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Nombre</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Apellido</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-8">
+                <label for="inputCity" class="form-label">Correo Electronico</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="ejemplo@mail.com">
+            </div>
+            <div class="col-md-4">
+                <label for="inputZip" class="form-label">Telefono</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="">
+            </div>
+            <div class="col-12">
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Consulta / Sugerencia</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="¿Que necesitas?">
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<body>
+
+</body>
+
+</html>
