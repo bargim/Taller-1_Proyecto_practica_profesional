@@ -1,7 +1,7 @@
 body {}
 
 .bg-grey {
-    background: #292929;
+    background: #000000;
 }
 
 .logo-footer {
@@ -9,7 +9,7 @@ body {}
 }
 
 footer {
-    color: grey;
+    color: rgb(155, 155, 155);
 }
 
 footer p,
@@ -25,7 +25,7 @@ footer h6 {
 footer h6:after {
     position: absolute;
     content: "";
-    background: grey;
+    background: rgb(155, 155, 155);
     width: 12%;
     height: 1px;
     left: 0;
@@ -33,7 +33,7 @@ footer h6:after {
 }
 
 .btn-footer {
-    color: grey;
+    color: rgb(155, 155, 155);
     text-decoration: none;
     border: 1px solid;
     border-radius: 43px;
@@ -69,7 +69,7 @@ footer h6:after {
 }
 
 .social .fa {
-    color: grey;
+    color: rgb(155, 155, 155);
     font-size: 22px;
     padding: 10px 15px;
     background: #3c3c3c;
@@ -86,7 +86,7 @@ footer ul {
 
 footer ul li a {
     text-decoration: none;
-    color: grey;
+    color: rgb(155, 155, 155);
     text-decoration: none;
 }
 
