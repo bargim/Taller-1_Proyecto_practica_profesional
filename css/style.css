@@ -197,3 +197,11 @@ a.btn-social,
 .btn-twitter {
     background-color: #55acee;
 }
+
+.card-body {
+    margin-top: 10px;
+}
+
+#margincards {
+    margin-top: 20px;
+}
