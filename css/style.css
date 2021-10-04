@@ -225,3 +225,11 @@ a.btn-social,
 #faqs {
     text-align: justify;
 }
+
+.card-body {
+    margin-top: 50px;
+}
+
+#margen {
+    margin-top: 20px;
+}
