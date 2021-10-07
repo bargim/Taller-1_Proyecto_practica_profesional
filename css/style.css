@@ -2,6 +2,10 @@
     background-color: black;
 }
 
+.navbar-toggler {
+    color: white;
+}
+
 .nav-item {
     color: white;
 }
