@@ -221,3 +221,15 @@ a.btn-social,
 #carouselExampleIndicators {
     margin-top: 20px;
 }
+
+#faqs {
+    text-align: justify;
+}
+
+.card-body {
+    margin-top: 50px;
+}
+
+#margen {
+    margin-top: 20px;
+}
