@@ -6,21 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- NavBar -->
     <section>
-        <nav class="navbar navbar-dark .navbar-expand-lg. bg-dark fixed-top">
+        <nav class="navbar navbar-light .navbar-expand-lg. bg-light fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/LOGOnegro.png" alt="" width="50" height="50">
-                    <a class="navbar-brand" href="index.html">PC1 Computacion</a>
+                <a class="navbar-brand" href="#">
+                    <img src="img/LOGOcolores.png" alt="" width="40" height="40">
+                    <a class="navbar-brand" href="#">PC1 Computacion</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -31,38 +30,31 @@
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                              <form class="d-flex">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                                </form>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                        <li><a class="dropdown-item" href="productos 1.html">Productos 1</a></li>
-                                        <li><a class="dropdown-item" href="productos 2.html">Productos 2</a></li>
-                                        <li><a class="dropdown-item" href="#">Notebooks</a></li>
-                                        <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                                    </ul>
+                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Soporte</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contacto.html">Contacto</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="faq.html">Preguntas Frecuentes</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="arrepentimiento.html">Arrepentimiento de Compra</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                      </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Notebooks</a></li>
+                                        <li><a class="dropdown-item" href="#">Impresoras</a></li>
+                                        <li><a class="dropdown-item" href="#">Scanners</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                    </ul>
                                 </li>
                             </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
                         </div>
                     </div>
             </div>
@@ -81,13 +73,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/bannerprincipal.png" class="d-block w-100" alt="..." height="350">
+                    <img src="img/banner pc1.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <a href="productos 1.html"><img src="img/bannergamer.png" class="d-block w-100" alt="..." height="350"></a>
+                    <img src="img/pc1canva.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <a href="productos 1.html"><img src="img/banner accesorios.png" class="d-block w-100" alt="..." height="350"></a>
+                    <img src="img/pc1canva.png" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -106,9 +98,9 @@
         <br>
         <div class="container" id="margincards">
             <div class="row">
-                <div class="col-xl-4 col-md-6 col-sm-12" id="margen">
+                <div class="col-4">
                     <div class="card shadow">
-                        <img src="img/armada2.jpg" class="card-img-top" alt="..." height="350">
+                        <img src="img/armada2.jpg" class="card-img-top" alt="..." width="300" height="350">
                         <div class="card-body">
                             <h5 class="card-title">Productos Destacados</h5>
                             <p class="card-text">Descripcion del producto</p>
@@ -116,9 +108,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12" id="margen">
+                <div class="col-4">
                     <div class="card shadow">
-                        <img src="img/teclado mouse1.jpg" class="card-img-top" alt="..." height="350">
+                        <img src="img/armada6.jpg" class="card-img-top" alt="..." width="300" height="350">
                         <div class="card-body">
                             <h5 class="card-title">Productos Destacados</h5>
                             <p class="card-text">Descripcion del producto</p>
@@ -126,9 +118,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12" id="margen">
+                <div class="col-4">
                     <div class="card shadow">
-                        <img src="img/cascos1.jpg" class="card-img-top" alt="..." height="350">
+                        <img src="img/cascos1.jpg" class="card-img-top" alt="..." width="300" height="350">
                         <div class="card-body">
                             <h5 class="card-title">Productos Destacados</h5>
                             <p class="card-text">Descripcion del producto</p>
@@ -136,9 +128,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12" id="margen">
+            </div>
+        </div>
+        <div class="container" id="margincards">
+            <div class="row">
+                <div class="col-4">
                     <div class="card shadow">
-                        <img src="img/placa1.jpg" class="card-img-top" alt="..." height="350">
+                        <img src="img/monitor1.jpg" class="card-img-top" alt="..." width="300" height="350">
                         <div class="card-body">
                             <h5 class="card-title">Productos Destacados</h5>
                             <p class="card-text">Descripcion del producto</p>
@@ -146,9 +142,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12" id="margen">
+                <div class="col-4">
                     <div class="card shadow">
-                        <img src="img/monitor1.jpg" class="card-img-top" alt="..." height="350">
+                        <img src="img/placa1.jpg" class="card-img-top" alt="..." width="300" height="350">
                         <div class="card-body">
                             <h5 class="card-title">Productos Destacados</h5>
                             <p class="card-text">Descripcion del producto</p>
@@ -156,9 +152,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12" id="margen">
+                <div class="col-4">
                     <div class="card shadow">
-                        <img src="img/armada6.jpg" class="card-img-top" alt="..." height="350">
+                        <img src="img/placa2.jpg" class="card-img-top" alt="..." width="300" height="350">
                         <div class="card-body">
                             <h5 class="card-title">Productos Destacados</h5>
                             <p class="card-text">Descripcion del producto</p>
@@ -183,7 +179,13 @@
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            Contactate con nosotros haciendo <a href="contacto.html" class="link-primary"> CLICK AQUI</a>
+                            <div class="row">
+                                <div class="col-4"> <img src="img/logocondomicilio.png" alt="" width="200" height="200"></div>
+                                <div class="col-8">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.743639193009!2d-58.49358508527622!3d-34.50938296001883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb13e019f10a5%3A0x84ae8659e4747745!2sPC1%20COMPUTACI%C3%93N!5e0!3m2!1ses!2sar!4v1632756739253!5m2!1ses!2sar"
+                                        width="700" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -222,60 +224,72 @@
         <br>
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <a href="https://www.facebook.com/" target="_blank" class="btn-social btn-facebook shadow"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/?hl=es" target="_blank" class="btn-social btn-instagram shadow"><i class="fa fa-instagram"></i></a>
-                    <a href="https://ar.linkedin.com/" target="_blank" class="btn-social btn-linkedin shadow"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://twitter.com/?lang=es" target="_blank" class="btn-social btn-twitter shadow"><i class="fa fa-twitter"></i></a>
+                <div class="col-4"></div>
+                <div class="col-8">
+                    <a href="https://www.facebook.com/" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/?hl=es" target="_blank" class="btn-social btn-instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://ar.linkedin.com/" target="_blank" class="btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank" class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a>
                     <br>
                     <br>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Footer -->
     <section>
         <footer class="container-fluid bg-grey py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-lg-6">
+                    <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-6 ">
                                 <div class="logo-part">
                                     <img src="img/logocompletoblanco.png" class="w-50 logo-footer">
-                                    <p>Av. Maipu 2899. Olivos.</p>
-                                    <p>Buenos Aires. Argentina</p>
+                                    <p>Av. Maipu 2899. Olivos. Buenos Aires</p>
+                                    <p>Terminos y condiciones de uso</p>
                                 </div>
                             </div>
                             <div class="col-md-6 px-4">
                                 <h6> Sobre nosotros</h6>
-                                <a href="contacto.html" class="btn-footer"> Contacto</a>
-                                <a href="faq.html" class="btn-footer">  Envios  </a><br>
-                                <a href="arrepentimiento.html" class="btn-footer">  Boton de Arrepentimiento  </a>
+                                <a href="#" class="btn-footer">  Sucursales  </a><br>
+                                <a href="#" class="btn-footer"> Contacto</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-6 px-4">
                                 <h6> Venta Online</h6>
                                 <div class="row ">
-                                    <div class="col-6">
+                                    <div class="col-md-6">
                                         <ul>
-                                            <li> <a href="productos 2.html"> Productos</a></li>
+                                            <li> <a href="#"> Productos</a> </li>
                                             <li> <a href="#"> Medios de pago</a> </li>
                                             <li> <a href="#"> Promociones</a> </li>
-                                            <li> <a href="#"> Soporte Tecnico</a> </li>
+                                            <li> <a href="#"> Envios</a> </li>
+                                            <li> <a href="#"> Boton de Arrepentimiento</a> </li>
                                         </ul>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-md-6 px-4">
                                         <ul>
                                             <li> <a href="#"> Privacidad</a> </li>
                                             <li> <a href="#"> Terminos y condiciones</a> </li>
-                                            <li> <a href="faq.html"> Preguntas Frecuentes</a> </li>
+                                            <li> <a href="#"> Preguntas Frecuentes</a> </li>
                                         </ul>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <h6> Suscribite</h6>
+                                <div class="social">
+                                </div>
+                                <form class="form-footer my-3">
+                                    <input type="text" placeholder="ejemplo@mail.com" name="search">
+                                    <input type="button" value="Ir">
+                                </form>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -283,8 +297,11 @@
             </div>
             </div>
     </section>
+
+
     <!-- JavaScript Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
