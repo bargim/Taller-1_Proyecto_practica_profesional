@@ -1,3 +1,21 @@
+.offcanvas-end {
+    background-color: black;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+.nav-item {
+    color: white;
+}
+
+.offcanvas-header {
+    color: white;
+}
+
+.dropdown-divider {
+    color: white;
 body {}
 
 .bg-grey {
