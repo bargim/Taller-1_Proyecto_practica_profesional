@@ -251,3 +251,15 @@ a.btn-social,
 #margen {
     margin-top: 20px;
 }
+
+.bg-modal-login {
+    background: black;
+}
+
+.txt-login {
+    color: white;
+}
+
+.login-error {
+    color: tomato;
+}

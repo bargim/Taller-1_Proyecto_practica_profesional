@@ -32,22 +32,20 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <form class="d-flex">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                                    <button id="btnLogin" class="btn btn-outline-success me-2" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                                    <button id="btnServices" class="btn btn-outline-warning d-none" type="button">Services</button>
                                 </form>
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <hr class=" dropdown-divider">
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                                 </li>
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown ">
                                     <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <ul class="dropdown-menu " aria-labelledby="offcanvasNavbarDropdown ">
                                         <li><a class="dropdown-item" href="tp/productos1.html">Productos1</a></li>
-                                        <li><a class="dropdown-item" href="productos 2.html">Productos2</a></li>
-                                        <li><a class="dropdown-item" href="#">Notebooks</a></li>
-                                        <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                        <li><a class="dropdown-item" href="tp/productos1.html">Productos2</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -69,34 +67,57 @@
         </nav>
     </section>
 
+    <!-- Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-modal-login">
+                <div class="modal-header">
+                    <h5 class="modal-title txt-login" id="loginModalLabel">Ingresar</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="fom-group d-flex">
+                        <input type="text " id="email" name="email " class="form-control m-3" placeholder="Ingresar Email... ">
+                    </div>
+                    <div class="fom-group d-flex">
+                        <input type="password " id="pass" name="password " class="form-control m-3" placeholder="Ingresar Password... ">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btn-register">Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--Carrousel -->
     <section>
         <br>
         <br>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div id="carouselExampleIndicators " class="carousel slide " data-bs-ride="carousel ">
+            <div class="carousel-indicators ">
+                <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="0 " class="active " aria-current="true " aria-label="Slide 1 "></button>
+                <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="1 " aria-label="Slide 2 "></button>
+                <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="2 " aria-label="Slide 3 "></button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/bannerprincipal.png" class="d-block w-100" alt="..." height="350">
+            <div class="carousel-inner ">
+                <div class="carousel-item active ">
+                    <img src="img/bannerprincipal.png " class="d-block w-100 " alt="... " height="350 ">
                 </div>
-                <div class="carousel-item">
-                    <a href="productos 1.html"><img src="img/bannergamer.png" class="d-block w-100" alt="..." height="350"></a>
+                <div class="carousel-item ">
+                    <a href="productos 1.html "><img src="img/bannergamer.png " class="d-block w-100 " alt="... " height="350 "></a>
                 </div>
-                <div class="carousel-item">
-                    <a href="productos 1.html"><img src="img/banner accesorios.png" class="d-block w-100" alt="..." height="350"></a>
+                <div class="carousel-item ">
+                    <a href="productos 1.html "><img src="img/banner accesorios.png " class="d-block w-100 " alt="... " height="350 "></a>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev " type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide="prev ">
+                <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+                <span class="visually-hidden ">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next " type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide="next ">
+                <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                <span class="visually-hidden ">Next</span>
             </button>
         </div>
     </section>
@@ -104,65 +125,65 @@
     <!-- Tarjetas -->
     <section>
         <br>
-        <div class="container" id="margincards">
-            <div class="row">
-                <div class="col-xl-4 col-md-6 col-sm-12" id="margen">
-                    <div class="card shadow">
-                        <img src="img/armada2.jpg" class="card-img-top" alt="..." height="350">
-                        <div class="card-body">
-                            <h5 class="card-title">Productos Destacados</h5>
-                            <p class="card-text">Descripcion del producto</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
+        <div class="container " id="margincards ">
+            <div class="row ">
+                <div class="col-xl-4 col-md-6 col-sm-12 " id="margen ">
+                    <div class="card shadow ">
+                        <img src="img/armada2.jpg " class="card-img-top " alt="... " height="350 ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Productos Destacados</h5>
+                            <p class="card-text ">Descripcion del producto</p>
+                            <a href="# " class="btn btn-primary">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12" id="margen">
-                    <div class="card shadow">
-                        <img src="img/teclado mouse1.jpg" class="card-img-top" alt="..." height="350">
-                        <div class="card-body">
-                            <h5 class="card-title">Productos Destacados</h5>
-                            <p class="card-text">Descripcion del producto</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
+                <div class="col-xl-4 col-md-6 col-sm-12 " id="margen ">
+                    <div class="card shadow ">
+                        <img src="img/teclado mouse1.jpg " class="card-img-top " alt="... " height="350 ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Productos Destacados</h5>
+                            <p class="card-text ">Descripcion del producto</p>
+                            <a href="# " class="btn btn-primary ">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12" id="margen">
-                    <div class="card shadow">
-                        <img src="img/cascos1.jpg" class="card-img-top" alt="..." height="350">
-                        <div class="card-body">
-                            <h5 class="card-title">Productos Destacados</h5>
-                            <p class="card-text">Descripcion del producto</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
+                <div class="col-xl-4 col-md-6 col-sm-12 " id="margen ">
+                    <div class="card shadow ">
+                        <img src="img/cascos1.jpg " class="card-img-top " alt="... " height="350 ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Productos Destacados</h5>
+                            <p class="card-text ">Descripcion del producto</p>
+                            <a href="# " class="btn btn-primary ">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12" id="margen">
-                    <div class="card shadow">
-                        <img src="img/placa1.jpg" class="card-img-top" alt="..." height="350">
-                        <div class="card-body">
-                            <h5 class="card-title">Productos Destacados</h5>
-                            <p class="card-text">Descripcion del producto</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
+                <div class="col-xl-4 col-md-6 col-sm-12 " id="margen ">
+                    <div class="card shadow ">
+                        <img src="img/placa1.jpg " class="card-img-top " alt="... " height="350 ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Productos Destacados</h5>
+                            <p class="card-text ">Descripcion del producto</p>
+                            <a href="# " class="btn btn-primary ">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12" id="margen">
-                    <div class="card shadow">
-                        <img src="/img/monitor1.jpg" class="card-img-top" alt="..." height="350">
-                        <div class="card-body">
-                            <h5 class="card-title">Productos Destacados</h5>
-                            <p class="card-text">Descripcion del producto</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
+                <div class="col-xl-4 col-md-6 col-sm-12 " id="margen ">
+                    <div class="card shadow ">
+                        <img src="/img/monitor1.jpg " class="card-img-top " alt="... " height="350 ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Productos Destacados</h5>
+                            <p class="card-text ">Descripcion del producto</p>
+                            <a href="# " class="btn btn-primary ">Ver más</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12" id="margen">
-                    <div class="card shadow">
-                        <img src="img/armada6.jpg" class="card-img-top" alt="..." height="350">
-                        <div class="card-body">
-                            <h5 class="card-title">Productos Destacados</h5>
-                            <p class="card-text">Descripcion del producto</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
+                <div class="col-xl-4 col-md-6 col-sm-12 " id="margen ">
+                    <div class="card shadow ">
+                        <img src="img/armada6.jpg " class="card-img-top " alt="... " height="350 ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Productos Destacados</h5>
+                            <p class="card-text ">Descripcion del producto</p>
+                            <a href="# " class="btn btn-primary ">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -173,42 +194,42 @@
     <!-- Acordeon -->
     <section>
         <br>
-        <div class="container shadow">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <div class="container shadow ">
+            <div class="accordion accordion-flush " id="accordionFlushExample ">
+                <div class="accordion-item ">
+                    <h2 class="accordion-header " id="flush-headingOne ">
+                        <button class="accordion-button collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#flush-collapseOne " aria-expanded="false " aria-controls="flush-collapseOne ">
                             ¿Donde estamos?
                         </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Contactate con nosotros haciendo <a href="contacto.html" class="link-primary"> CLICK
+                    <div id="flush-collapseOne " class="accordion-collapse collapse " aria-labelledby="flush-headingOne " data-bs-parent="#accordionFlushExample ">
+                        <div class="accordion-body ">
+                            Contactate con nosotros haciendo <a href="contacto.html " class="link-primary "> CLICK
                                 AQUI</a>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <div class="accordion-item ">
+                    <h2 class="accordion-header " id="flush-headingTwo ">
+                        <button class="accordion-button collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#flush-collapseTwo " aria-expanded="false " aria-controls="flush-collapseTwo ">
                             Preguntas Frecuentes
                         </button>
                     </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Resolve todas tus dudas haciendo <a href="faq.html" class="link-primary"> CLICK AQUI</a>
+                    <div id="flush-collapseTwo " class="accordion-collapse collapse " aria-labelledby="flush-headingTwo " data-bs-parent="#accordionFlushExample ">
+                        <div class="accordion-body ">
+                            Resolve todas tus dudas haciendo <a href="faq.html " class="link-primary "> CLICK AQUI</a>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <div class="accordion-item ">
+                    <h2 class="accordion-header " id="flush-headingThree ">
+                        <button class="accordion-button collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#flush-collapseThree " aria-expanded="false " aria-controls="flush-collapseThree ">
                             Medios de Pago
                         </button>
                     </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <img src="img/medios de pago.png" alt="" width="1100" height="200">
+                    <div id="flush-collapseThree " class="accordion-collapse collapse " aria-labelledby="flush-headingThree " data-bs-parent="#accordionFlushExample ">
+                        <div class="accordion-body ">
+                            <img src="img/medios de pago.png " alt=" " width="1100 " height="200 ">
                         </div>
                     </div>
                 </div>
@@ -221,16 +242,16 @@
     <section>
         <br>
         <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <a href="https://www.facebook.com/" target="_blank" class="btn-social btn-facebook shadow"><i
-                            class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/?hl=es" target="_blank" class="btn-social btn-instagram shadow"><i class="fa fa-instagram"></i></a>
-                    <a href="https://ar.linkedin.com/" target="_blank" class="btn-social btn-linkedin shadow"><i
-                            class="fa fa-linkedin"></i></a>
-                    <a href="https://twitter.com/?lang=es" target="_blank" class="btn-social btn-twitter shadow"><i
-                            class="fa fa-twitter"></i></a>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-12 ">
+                    <a href="https://www.facebook.com/ " target="_blank " class="btn-social btn-facebook shadow "><i
+                            class="fa fa-facebook "></i></a>
+                    <a href="https://www.instagram.com/?hl=es " target="_blank " class="btn-social btn-instagram shadow "><i class="fa fa-instagram "></i></a>
+                    <a href="https://ar.linkedin.com/ " target="_blank " class="btn-social btn-linkedin shadow "><i
+                            class="fa fa-linkedin "></i></a>
+                    <a href="https://twitter.com/?lang=es " target="_blank " class="btn-social btn-twitter shadow "><i
+                            class="fa fa-twitter "></i></a>
                     <br>
                     <br>
                 </div>
@@ -239,44 +260,44 @@
     </section>
     <!-- Footer -->
     <section>
-        <footer class="container-fluid bg-grey py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6">
-                        <div class="row">
+        <footer class="container-fluid bg-grey py-5 ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-12 col-lg-6 ">
+                        <div class="row ">
                             <div class="col-md-6 ">
-                                <div class="logo-part">
-                                    <img src="img/logocompletoblanco.png" class="w-50 logo-footer">
+                                <div class="logo-part ">
+                                    <img src="img/logocompletoblanco.png " class="w-50 logo-footer ">
                                     <p>Av. Maipu 2899. Olivos.</p>
                                     <p>Buenos Aires. Argentina</p>
                                 </div>
                             </div>
-                            <div class="col-md-6 px-4">
+                            <div class="col-md-6 px-4 ">
                                 <h6> Sobre nosotros</h6>
-                                <a href="sections/contacto.html" class="btn-footer"> Contacto</a>
-                                <a href="sections/faq.html" class="btn-footer"> Envios </a><br>
-                                <a href="sections/arrepentimiento.html" class="btn-footer"> Boton de Arrepentimiento </a>
+                                <a href="sections/contacto.html " class="btn-footer "> Contacto</a>
+                                <a href="sections/faq.html " class="btn-footer "> Envios </a><br>
+                                <a href="sections/arrepentimiento.html " class="btn-footer "> Boton de Arrepentimiento </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-8">
+                    <div class="col-md-6 ">
+                        <div class="row ">
+                            <div class="col-md-8 ">
                                 <h6> Venta Online</h6>
                                 <div class="row ">
-                                    <div class="col-6">
+                                    <div class="col-6 ">
                                         <ul>
-                                            <li> <a href="sections/productos 1.html"> Productos</a></li>
-                                            <li> <a href="sections/faq.html"> Medios de pago</a> </li>
-                                            <li> <a href="sections/faq.html"> Promociones</a> </li>
-                                            <li> <a href="sections/faq.html"> Soporte Tecnico</a> </li>
+                                            <li> <a href="sections/productos 1.html "> Productos</a></li>
+                                            <li> <a href="sections/faq.html "> Medios de pago</a> </li>
+                                            <li> <a href="sections/faq.html "> Promociones</a> </li>
+                                            <li> <a href="sections/faq.html "> Soporte Tecnico</a> </li>
                                         </ul>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 ">
                                         <ul>
-                                            <li> <a href="#"> Privacidad</a> </li>
-                                            <li> <a href="sections/faq.html"> Terminos y condiciones</a> </li>
-                                            <li> <a href="sections/faq.html"> Preguntas Frecuentes</a> </li>
+                                            <li> <a href="# "> Privacidad</a> </li>
+                                            <li> <a href="sections/faq.html "> Terminos y condiciones</a> </li>
+                                            <li> <a href="sections/faq.html "> Preguntas Frecuentes</a> </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -288,8 +309,9 @@
             </div>
     </section>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ " crossorigin="anonymous "></script>
+    <script src="js/app.js "></script>
+
 </body>
 
 </html>
