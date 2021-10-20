@@ -23,7 +23,6 @@ function validar() {
     } else {
         email.classList.add('border', 'border-4', 'border-danger', 'login-error');
         pass.classList.add('border', 'border-4', 'border-danger', 'login-error');
-        email.value = 'Error mail...';
-        pass.value = 'Error password'
+        email.value = 'Error: Email o Contraseña incorrecta...';
     }
 }
