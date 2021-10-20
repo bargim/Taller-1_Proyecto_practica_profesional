@@ -13,18 +13,20 @@
 </head>
 
 <body>
-    <div class="card mb-3" style="max-width: 5000px;">
-        <div class="row g-0">
-            <div class="col-md-4">
-                <img src="armada1.jpg" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">PC Gamer Armada | Intel Core I7 10700F + 16GB (2x8GB) + RTX 3070 8Gb + 500GB NVME</h5>
-                    <br>
-                    <h4>Caracteristicas</h4>
-                    <br>
-                    <pre class="card-text">
+    <!-- Producto Detalle-->
+    <section class="mt-3">
+        <div class="card mb-3" style="max-width: 5000px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="armada1.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">PC Gamer Armada | Intel Core I7 10700F + 16GB (2x8GB) + RTX 3070 8Gb + 500GB NVME</h5>
+                        <br>
+                        <h4>Caracteristicas</h4>
+                        <br>
+                        <pre class="card-text">
 -1 x CPU064 Micro Intel Core I7 10700F 8 Núcleos / 16 Threads HT 4.8Ghz (10ma Gen) LGA1200  || Garantía 36 Meses
 -1 x MOT185 Mother ASUS PRIME B460M-A (10ma Gen) LGA1200  || Garantía 36 Meses
 -2 x RAM104 Memoria RAM PNY 8GB DDR4 3200Mhz XLR8  || Garantía 12 Meses
@@ -35,25 +37,103 @@
 -1 x SER002 Instalación Sistema Operativo (Mano de Obra Sin Licencia)  || Garantía N/A
 -1 x HDD097 Disco SSD M2 Crucial 500Gb P1 NVME  || Garantía 12 Meses
               </pre>
-                    <br>
-                    <h3>Precio: $316600.00</h3>
-                    <pre>
+                        <br>
+                        <h3>Precio: $316600.00</h3>
+                        <pre>
 en 12 cuotas de $26383.33 sin interes
               </pre>
-                    <br>
-                    <div><button type="button" class="btn btn-outline-primary">Comprar ahora</button></div>
+                        <br>
+                        <div><button type="button" class="btn btn-outline-primary">Comprar ahora</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <!-- NavBar -->
+    <section>
+        <nav class="navbar navbar-dark .navbar-expand-lg. bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/LOGOnegro.png" alt="" width="50" height="50">
+                    <a class="navbar-brand" href="../index.html">PC1 Computacion</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">PC1 Computacion</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <form class="d-flex">
+                                    <button id="btnLogin" class="btn btn-outline-success me-2" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                                    <button id="btnServices" class="btn btn-outline-warning d-none" type="button"></button>
+                                </form>
+                                <li>
+                                    <hr class=" dropdown-divider">
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                                    <ul class="dropdown-menu " aria-labelledby="offcanvasNavbarDropdown ">
+                                        <li><a class="dropdown-item" href="productos1.html">Productos1</a></li>
+                                        <li><a class="dropdown-item" href="productos1.html">Productos2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../soporte.html">Soporte</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../faq.html">Preguntas Frecuentes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../arrepentimiento.html">Arrepentimiento de Compra</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-modal-login">
+                <div class="modal-header">
+                    <h5 class="modal-title txt-login" id="loginModalLabel">Iniciar sesión</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="fom-group d-flex">
+                        <input type="text " id="email" name="email " class="form-control m-3" aria-describedby="emailHelp" placeholder="Ingresar Email... ">
+                    </div>
+                    <div class="fom-group d-flex">
+                        <input type="password" class="form-control m-3" id="pass" name="password " placeholder="Ingresar Password... ">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btn-register">Ingresar</button>
                 </div>
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
+
     <!-- Comentarios-->
     <section>
         <div class="container">
             <form>
-                <h3 class="mb-3"> Comentarios</h3>
+                <h3> Comentarios</h3>
                 <div class="row mb-3">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
@@ -61,15 +141,15 @@ en 12 cuotas de $26383.33 sin interes
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label for="comentarioProducto" class="col-sm-2 col-form-label">Comentarios</label>
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Comentarios</label>
                     <div class="col-sm-10">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="comentarioProducto"></textarea>
+                        <textarea class="form-control" placeholder="Deje un comentario del producto aqui..." id="floatingTextarea"></textarea>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Calificacion</label>
-                    <div class="col-sm-10">
-                        <form>
+                    <div class="col-sm-2">
+                        <div class="starRating">
                             <p class="clasificacion">
                                 <input id="radio1" type="radio" name="estrellas" value="5">
                                 <!--
@@ -91,13 +171,65 @@ en 12 cuotas de $26383.33 sin interes
                                 <!--
                         --><label for="radio5">★</label>
                             </p>
-                        </form>
+                        </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="submit" class="btn btn-primary mb-3">Enviar</button>
             </form>
         </div>
     </section>
+
+    <!-- Footer -->
+    <section>
+        <footer class="container-fluid bg-grey py-5 ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-12 col-lg-6 ">
+                        <div class="row ">
+                            <div class="col-md-6 ">
+                                <div class="logo-part ">
+                                    <img src="../img/logocompletoblanco.png " class="w-50 logo-footer ">
+                                    <p>Av. Maipu 2899. Olivos.</p>
+                                    <p>Buenos Aires. Argentina</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 px-4 ">
+                                <h6> Sobre nosotros</h6>
+                                <a href="../contacto.html " class="btn-footer "> Contacto</a>
+                                <a href="../faq.html " class="btn-footer "> Envios </a><br>
+                                <a href="../arrepentimiento.html " class="btn-footer "> Boton de Arrepentimiento </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="row ">
+                            <div class="col-md-8 ">
+                                <h6> Venta Online</h6>
+                                <div class="row ">
+                                    <div class="col-6 ">
+                                        <ul>
+                                            <li> <a href="productos1.html "> Productos</a></li>
+                                            <li> <a href="../faq.html "> Medios de pago</a> </li>
+                                            <li> <a href="../faq.html "> Promociones</a> </li>
+                                            <li> <a href="../faq.html "> Soporte Tecnico</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 ">
+                                        <ul>
+                                            <li> <a href="# "> Privacidad</a> </li>
+                                            <li> <a href="../faq.html "> Terminos y condiciones</a> </li>
+                                            <li> <a href="../faq.html "> Preguntas Frecuentes</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ " crossorigin="anonymous "></script>
     <script src="../js/app.js "></script>
