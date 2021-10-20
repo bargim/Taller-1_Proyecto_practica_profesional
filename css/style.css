@@ -261,5 +261,5 @@ a.btn-social,
 }
 
 .login-error {
-    border-color: tomato;
+    color: tomato;
 }

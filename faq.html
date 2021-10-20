@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
     <!-- NavBar -->
     <section>
         <nav class="navbar navbar-dark .navbar-expand-lg. bg-dark fixed-top">
@@ -31,11 +32,11 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <form class="d-flex">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                                    <button id="btnLogin" class="btn btn-outline-success me-2" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                                    <button id="btnServices" class="btn btn-outline-warning d-none" type="button">Services</button>
                                 </form>
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <hr class=" dropdown-divider">
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
@@ -43,10 +44,8 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
                                     <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                        <li><a class="dropdown-item" href="productos 1.html">Productos1</a></li>
-                                        <li><a class="dropdown-item" href="productos 2.html">Productos2</a></li>
-                                        <li><a class="dropdown-item" href="#">Notebooks</a></li>
-                                        <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                        <li><a class="dropdown-item" href="tp/productos1.html">Productos1</a></li>
+                                        <li><a class="dropdown-item" href="tp/productos1.html">Productos2</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -71,33 +70,33 @@
     <section>
         <div class="container" id="faqs">
             <h2> Preguntas Frecuentes (FAQ) </h2> <br>
-            <h5 id="subtitulos-faqs">¿REALIZAN ARMADO DE PC? </h5> <br>
+            <h5 class="subtitulos-faqs">¿REALIZAN ARMADO DE PC? </h5> <br>
             <p> Nos dedicamos especialmente al armado de PC Gamers. Podes solicitarnos un presupuesto sin cargo por cualquier medio de comunicación. El tiempo de armado de una PC son 72hs hábiles. Luego te avisaremos para que pases a retirarla. También realizamos
                 envíos. Si los componentes son adquiridos en PC1 Computacion el armado NO TIENE COSTO. La PC Se entrega armada junto a las cajas y manuales de cada componente. En caso de que los componentes no fuesen adquiridos en nuestro local, se cotizará
                 en el momento según el hardware que lleve la PC.
             </p><br>
 
-            <h5 id="subtitulos-faqs">¿CUALES SON LAS FORMAS DE PAGO? </h5> <br>
+            <h5 class="subtitulos-faqs">¿CUALES SON LAS FORMAS DE PAGO? </h5> <br>
             <p> Efectivo: Podes abonar en Pesos Argentinos o en Dólares Estadounidenses al tipo de cambio del día. Consultar en el momento al realizar la compra. </p>
             <p> Depósito / Transferencia Bancaria: Podes abonar tu compra directamente con algunos de nuestros bancos.</p>
             <p> Tarjeta de Débito: Aceptamos tarjetas de débito en nuestro local. </p>
             <p> Tarjeta de Crédito: Pago Online: Aceptamos todas las tarjetas de crédito para que puedas abonar hasta en 12 cuotas a través de MercadoPago. Promociones de cuotas sin interés: http://www.mercadopago.com.ar/promociones </p> <br>
 
-            <h5 id="subtitulos-faqs">¿HACEN ENVÍOS A TODO EL PAÍS?</h5> <br>
+            <h5 class="subtitulos-faqs">¿HACEN ENVÍOS A TODO EL PAÍS?</h5> <br>
 
             <p>Gran Buenos Aires y Capital Federal: Se realizan envíos por Moto Express a cargo del cliente. Servicio de mensajería a través de OCA con entrega en Sucursal o en Domicilio. NO se realizan envíos por OCA contra reembolso. Interior del País:
                 Servicio de mensajería a través de OCA con entrega en Sucursal o en Domicilio. NO se realizan envíos por OCA contra reembolso. Mercado Envíos: Se realizan envíos a través de Mercado Envíos si el pago fue realizada a través de la opción
                 "Pago Online - Mercado Pago". </p><br>
 
-            <h5 id="subtitulos-faqs">CAMBIOS Y DEVOLUCIONES </h5> <br>
+            <h5 class="subtitulos-faqs">CAMBIOS Y DEVOLUCIONES </h5> <br>
             <p> Al realizar una compra en PC1 Computacion, siendo de manera online o en nuestra sucursal el cliente acepta las siguientes condiciones referidas a devoluciones y cambios. Para realizar el cambio o la devolución de un producto este debe cumplir
                 con los siguientes requisitos: No debe estar abierto. No debe tener indicios de uso. Debe contar con la caja original, manual y accesorios correspondientes. Factura de compra. </p><br>
 
-            <h5 id="subtitulos-faqs">ARREPENTIMIENTO DE COMPRA </h5> <br>
+            <h5 class="subtitulos-faqs">ARREPENTIMIENTO DE COMPRA </h5> <br>
             <p> Aplica para las compras realizadas de manera “online” (Pagina Web, Redes Sociales, teléfono). Por el plazo de hasta 10 (diez) días corridos de haber realizado la misma, el cliente puede arrepentirse de la compra. Aplican los requisitos mencionados
                 arriba. Para solicitar la devolución del producto el cliente deberá traerlo o enviarlo a nuestra sucursal. En un plazo de hasta 72hs hábiles se procederá a devolver el monto abonado, emitiendo una Nota de Crédito. </p><br>
 
-            <h5 id="subtitulos-faqs">POLITICAS DE GARANTÍA </h5> <br>
+            <h5 class="subtitulos-faqs">POLITICAS DE GARANTÍA </h5> <br>
 
             <p> Al realizar una compra en PC1 Computacion, siendo de manera online o en nuestra sucursal el cliente acepta las siguientes condiciones referidas a las garantías de los productos. Todos los productos tienen GARANTÍA OFICIAL del fabricante. PC1
                 Computacion ofrece adicionalmente garantía directa de los siguientes productos: 12 (doce) meses: Computadoras ensambladas por nuestros técnicos. 6 (seis) meses: Procesadores. Memorias RAM. Gabinetes. Motherboards. Placas de video. Almacenamiento:
@@ -122,7 +121,7 @@
                 <div class="row">
                     <div class="col-md-12 col-lg-6">
                         <div class="row">
-                            <div class="col-md-6 ">
+                            <div class="col-md-6">
                                 <div class="logo-part">
                                     <img src="img/logocompletoblanco.png" class="w-50 logo-footer">
                                     <p>Av. Maipu 2899. Olivos.</p>
@@ -131,31 +130,30 @@
                             </div>
                             <div class="col-md-6 px-4">
                                 <h6> Sobre nosotros</h6>
-                                <a href="contacto.html" class="btn-footer"> Contacto</a>
-                                <a href="faq.html" class="btn-footer">  Envios  </a><br>
-                                <a href="arrepentimiento.html" class="btn-footer">  Boton de Arrepentimiento  </a>
+                                <a href="sections/contacto.html" class="btn-footer"> Contacto</a>
+                                <a href="sections/faq.html" class="btn-footer"> Envios </a><br>
+                                <a href="sections/arrepentimiento.html" class="btn-footer"> Boton de Arrepentimiento </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="row">
+                        <div class="row ">
                             <div class="col-md-8">
                                 <h6> Venta Online</h6>
                                 <div class="row ">
                                     <div class="col-6">
                                         <ul>
-                                            <li> <a href="productos 2.html"> Productos</a></li>
-                                            <li> <a href="#"> Medios de pago</a> </li>
-                                            <li> <a href="#"> Promociones</a> </li>
-                                            <li> <a href="#"> Soporte Tecnico</a> </li>
+                                            <li> <a href="sections/productos 1.html"> Productos</a></li>
+                                            <li> <a href="sections/faq.html"> Medios de pago</a> </li>
+                                            <li> <a href="sections/faq.html"> Promociones</a> </li>
+                                            <li> <a href="sections/faq.html"> Soporte Tecnico</a> </li>
                                         </ul>
                                     </div>
                                     <div class="col-6">
-
                                         <ul>
-                                            <li> <a href="#"> Privacidad</a> </li>
-                                            <li> <a href="#"> Terminos y condiciones</a> </li>
-                                            <li> <a href="faq.html"> Preguntas Frecuentes</a> </li>
+                                            <li> <a href="# "> Privacidad</a> </li>
+                                            <li> <a href="sections/faq.html"> Terminos y condiciones</a> </li>
+                                            <li> <a href="sections/faq.html"> Preguntas Frecuentes</a> </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -166,6 +164,10 @@
             </div>
             </div>
     </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ " crossorigin="anonymous "></script>
+    <script src="js/app.js "></script>
 </body>
 
 </html>
