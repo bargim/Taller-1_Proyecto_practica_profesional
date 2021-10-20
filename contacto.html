@@ -65,6 +65,29 @@
     </nav>
 </section>
 
+<!-- Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-modal-login">
+            <div class="modal-header">
+                <h5 class="modal-title txt-login" id="loginModalLabel">Iniciar sesión</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="fom-group d-flex">
+                    <input type="text " id="email" name="email " class="form-control m-3" aria-describedby="emailHelp" placeholder="Ingresar Email... ">
+                </div>
+                <div class="fom-group d-flex">
+                    <input type="password" class="form-control m-3" id="pass" name="password " placeholder="Ingresar Password... ">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btn-register">Ingresar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Contacto -->
 <section id="contacto">
     <h3 id="contacto-titulo">¿Donde estamos?</h3>
@@ -88,11 +111,11 @@
         <form class="row g-3">
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Nombre</label>
-                <input type="email" class="form-control" id="inputEmail4">
+                <input type="text" class="form-control" id="inputEmail4">
             </div>
             <div class="col-md-6">
                 <label for="inputPassword4" class="form-label">Apellido</label>
-                <input type="password" class="form-control" id="inputPassword4">
+                <input type="text" class="form-control" id="inputPassword4">
             </div>
             <div class="col-md-8">
                 <label for="inputCity" class="form-label">Correo Electronico</label>
