@@ -1,5 +1,5 @@
-const btnValidar = document.getElementById('btn-register').addEventListener('click', validar);
-const btnservices = document.getElementById('btnServices');
+var btnValidar = document.getElementById('btn-register').addEventListener('click', validar);
+var btnservices = document.getElementById('btnServices');
 var loginModal = new bootstrap.Modal(document.getElementById('loginModal'), {
     keyboard: false
 });
