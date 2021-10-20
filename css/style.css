@@ -264,21 +264,22 @@
         color: tomato;
     }
     
-    #form {
+    #starRating {
         width: 150px;
         margin: 0 auto;
         height: 50px;
     }
     
-    #form p {
+    #starRating p {
         text-align: center;
     }
     
-    #form label {
+    #starRating label {
         font-size: 100px;
     }
     
     input[type="radio"] {
+        /*escondo el radio btn*/
         display: none;
     }
     
@@ -291,6 +292,7 @@
         direction: rtl;
         /* cambia la direccion del texto*/
         unicode-bidi: bidi-override;
+        font-size: 30px;
     }
     
     label:hover,
